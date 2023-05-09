@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
-public class Main {
+public class IstanbulRunfest {
 
 	public static void fastest1(Integer[] given, String[] names){
 		int lowestTime = given[0], indexOfFast = 0, indexOfSecondFast = 100,secondLowest= given[1];
