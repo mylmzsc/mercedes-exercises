@@ -14,13 +14,19 @@ public class Library {
 
 	// Add the missing implementation to this class
 	public void printAvailableBooks() {
-		String title;
-		for (int i = 0; i < this.bookList.size(); i++) {
-			title = bookList.get(i).getTitle();
-			if(!bookList.get(i).isBorrowed()){
-				System.out.println(title);
+		if(this.bookList.size() == 0){
+			System.out.println("There are no books that are available in this library. ");
+		}
+		else{
+			String title;
+			for (int i = 0; i < this.bookList.size(); i++) {
+				title = bookList.get(i).getTitle();
+				if(!bookList.get(i).isBorrowed()){
+					System.out.println(title);
+				}
 			}
 		}
+
 	}
 
 	public void addBook(Book book) {
